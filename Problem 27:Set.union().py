@@ -1,8 +1,7 @@
 n = int(input())
-s1 = list(map(int, input().split()))
+s1 = set(map(int, input().split()))
 m = int(input())
-s2= list(map(int,input().split()))
+s2= set(map(int,input().split()))
 
-s1.extend(s2)
-s = set(s1)
+s = s1.union(s2)
 print(len(s))
